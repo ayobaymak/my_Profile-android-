@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="ayobaymak.com.myprofile.MainActivity"
+    android:weightSum="1">
+
+    <android.support.design.widget.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        app:srcCompat="@android:drawable/ic_dialog_email"
+        android:id="@+id/mailButton"
+        android:layout_weight="1.05"
+        android:layout_alignParentStart="false"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1.02">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:text="HNG PROFILE"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/hngTextview"
+                android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+                android:textAlignment="center"
+                android:fontFamily="sans-serif"
+                android:paddingBottom="5px" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="251dp"
+                app:srcCompat="@mipmap/my_dp"
+                android:id="@+id/imageView3" />
+
+            <TextView
+                android:text="Slack :   https://hnginterns.slack.com/ayobaymak"
+                android:autoLink="web"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/slackTextView"
+                android:textAppearance="@style/TextAppearance.AppCompat.Widget.ActionBar.Title"
+                android:fontFamily="casual"
+                android:typeface="sans"
+                android:textAlignment="center"
+                android:paddingBottom="5px"
+                android:paddingTop="5px"
+                android:clickable="true" />
+
+            <TextView
+                android:text="Twitter :   https://twitter.com/ayobaymak"
+                android:autoLink="web"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/twitterTextView"
+                android:textAppearance="@style/TextAppearance.AppCompat.Widget.ActionBar.Title"
+                android:fontFamily="casual"
+                android:typeface="sans"
+                android:textAlignment="center"
+                android:paddingBottom="5px"
+                android:paddingTop="5px" />
+
+            <TextView
+                android:text="Github :   https://github.com/ayobaymak"
+                android:autoLink="web"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/githubTextView"
+                android:textAppearance="@style/TextAppearance.AppCompat.Widget.ActionMode.Title"
+                android:fontFamily="casual"
+                android:typeface="sans"
+                android:textAlignment="center"
+                android:paddingBottom="5px"
+                android:paddingTop="5px"
+                android:clickable="true" />
+
+            <TextView
+                android:text="Phone : +2347032256393"
+                android:autoLink="phone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/phoneTextView"
+                android:clickable="true"
+                android:paddingTop="5px"
+                android:paddingBottom="5px"
+                android:textAppearance="@style/TextAppearance.AppCompat.Widget.ActionMode.Title"
+                android:fontFamily="casual"
+                android:textAlignment="center" />
+
+            <TextView
+                android:text="Bio :   My name is Ayodeji Bayo-Makinde, a graduate of  Bsc. Information Technology from Valley View University Accra Ghana. I'm very fluent in php and the Laravel framework. I also have little experience with mobile application development(android), Java, C# and Database management systems (Oracle). I'm a very fast learner and I work well in teams."
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/bioTextView"
+                android:textAppearance="@style/TextAppearance.AppCompat.Widget.ActionBar.Title"
+                android:fontFamily="casual"
+                android:textAlignment="center"
+                android:paddingTop="5px"
+                android:paddingBottom="5px" />
+
+        </LinearLayout>
+
+    </ScrollView>
+</RelativeLayout>
